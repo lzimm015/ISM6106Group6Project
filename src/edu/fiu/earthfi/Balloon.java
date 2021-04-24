@@ -17,7 +17,7 @@ public class Balloon extends PropagatingDevice {
 	 * Decomm the Baloon.
 	 */
 	public void decommission() {
-		ScenarioUtil.printMessage("3.1 Baloon - Decomm done by parachute");
+		ScenarioUtil.printMessageWithDelay("3.1 Baloon - Decomm done by parachute");
 		parachute.deployParachute();
 	}
 

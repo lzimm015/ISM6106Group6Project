@@ -47,25 +47,25 @@ public abstract class PropagatingDevice {
 	 * Sends a signal to the ground to propagate the network to users.
 	 */
 	public void sendSignalToGround()  {
-		ScenarioUtil.printMessage("2.5 PropagatingDevice - Signal established");
+		ScenarioUtil.printMessageWithDelay("2.5 PropagatingDevice - Signal established");
 		controlStation.receiveSignalFromDevice();
-		ScenarioUtil.printMessage("2.7 PropagatingDevice - Data acknowledged");		
+		ScenarioUtil.printMessageWithDelay("2.7 PropagatingDevice - Data acknowledged");		
 		systemUsers.get(0).connectToInternet();
-		ScenarioUtil.printMessage("2.9 PropagatingDevice - Internet accessed", 1);
+		ScenarioUtil.printMessageWithDelay("2.9 PropagatingDevice - Internet accessed", 1);
 	}
 
 	/**
 	 * Receive a signal from the ground.
 	 */
 	public void receiveSignalFromGround()  {
-		ScenarioUtil.printMessage("1.1 PropagatingDevice - Signal Received", 1);
+		ScenarioUtil.printMessageWithDelay("1.1 PropagatingDevice - Signal Received", 1);
 	}
 
 	/**
 	 * Moves the device to the desired position
 	 */
 	public void moveToPosition()  {
-		ScenarioUtil.printMessage("2.1 PropagatingDevice - Area clear for launch");
+		ScenarioUtil.printMessageWithDelay("2.1 PropagatingDevice - Area clear for launch");
 	}
 
 	public void systemCheck()  {
@@ -84,7 +84,7 @@ public abstract class PropagatingDevice {
 	 */
 	public void propagateSignal()  {
 		getNearbyDevices();
-		ScenarioUtil.printMessage("2.3 PropagatingDevice - Signal is good");
+		ScenarioUtil.printMessageWithDelay("2.3 PropagatingDevice - Signal is good");
 		transponder.transferSignal(nearbyDevices.get(0));		
 	}
 

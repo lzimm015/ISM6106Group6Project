@@ -16,7 +16,7 @@ public class User {
 	 * Receives internet signal.
 	 */
 	public void connectToInternet()  {
-		ScenarioUtil.printMessage("2.8 User - Internet data sent");
+		ScenarioUtil.printMessageWithDelay("2.8 User - Internet data sent");
 	}
 
 }

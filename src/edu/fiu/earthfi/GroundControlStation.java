@@ -40,7 +40,7 @@ public class GroundControlStation {
 	 * Receives a signal from the device network.
 	 */
 	public void receiveSignalFromDevice() {
-		ScenarioUtil.printMessage("2.6 GroundControlStation - Signal Directed");		
+		ScenarioUtil.printMessageWithDelay("2.6 GroundControlStation - Signal Directed");		
 	}
 
 }

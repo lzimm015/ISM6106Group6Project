@@ -26,7 +26,7 @@ public class LTEAntenna {
 	 * Send the signal to the devices
 	 */
 	public void sendSignal()  {
-		ScenarioUtil.printMessage("1. LTEAntenna - Signal Sent");
+		ScenarioUtil.printMessageWithDelay("1. LTEAntenna - Signal Sent");
 		devices.get(0).receiveSignalFromGround();
 	}
 

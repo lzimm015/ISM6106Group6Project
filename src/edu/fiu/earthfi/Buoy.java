@@ -16,7 +16,7 @@ public class Buoy extends PropagatingDevice {
 	 * Decomission the buoy
 	 */
 	public void decommission() {
-		ScenarioUtil.printMessage("3.1 Buoy - Decomm done by sinking");	
+		ScenarioUtil.printMessageWithDelay("3.1 Buoy - Decomm done by sinking");	
 	}
 
 	public String getType() {

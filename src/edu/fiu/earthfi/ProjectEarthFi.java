@@ -15,7 +15,7 @@ public class ProjectEarthFi {
 	 * Performs the basic device workflow (same as the sequence diagram)
 	 */
 	private void deviceBasicFlow() {
-		ScenarioUtil.printMessage("Starting the basic device flow", 1);
+		ScenarioUtil.printMessageWithDelay("Starting the basic device flow", 1);
 		
 		LTEAntenna antenna = new LTEAntenna();		
 		antenna.sendSignal();

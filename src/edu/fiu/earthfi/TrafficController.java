@@ -23,10 +23,10 @@ public class TrafficController {
 	 * Organize traffic to prevent accidents and better propagate the signal.
 	 */
 	public void organizeTraffic()  {
-		ScenarioUtil.printMessage("2. TrafficController - Air Traffic for baloon launch");
+		ScenarioUtil.printMessageWithDelay("2. TrafficController - Air Traffic for baloon launch");
 		devices.get(0).moveToPosition();
 		
-		ScenarioUtil.printMessage("2.2 TrafficController - Signal boosted");
+		ScenarioUtil.printMessageWithDelay("2.2 TrafficController - Signal boosted");
 		devices.get(0).propagateSignal();
 		
 	}
@@ -43,7 +43,7 @@ public class TrafficController {
 	 */
 	public void decommissionAll() {		
 		for (PropagatingDevice device : devices) {
-			ScenarioUtil.printMessage("3. TrafficController - Decomm signal, device type: " + device.getType());					
+			ScenarioUtil.printMessageWithDelay("3. TrafficController - Decomm signal, device type: " + device.getType());					
 			device.decommission();
 		}	
 	}

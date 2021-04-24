@@ -17,7 +17,7 @@ public class Transponder {
 	 * Allows the device to propagate the signal.
 	 */
 	public void transferSignal(PropagatingDevice propagatingDevice) {
-		ScenarioUtil.printMessage("2.4 Transponder - Signal Transferred");
+		ScenarioUtil.printMessageWithDelay("2.4 Transponder - Signal Transferred");
 		propagatingDevice.sendSignalToGround();		
 	}
 
