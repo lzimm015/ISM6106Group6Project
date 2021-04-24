@@ -1,5 +1,8 @@
 package edu.fiu.earthfi;
 
+/**
+ * A concrete implementation of PropagatingDevice that floats in the air.
+ */
 public class Balloon extends PropagatingDevice {
 
 	private Object windSensor;

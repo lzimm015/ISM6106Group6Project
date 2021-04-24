@@ -2,6 +2,11 @@ package edu.fiu.earthfi;
 
 import java.util.List;
 
+import edu.fiu.earthfi.util.ScenarioUtil;
+
+/**
+ * Controls the network operations from the ground.
+ */
 public class GroundControlStation {
 
 	private Object receptionAntenna;
@@ -31,8 +36,11 @@ public class GroundControlStation {
 	public void monitorActivity()  {
 	}
 
+	/**
+	 * Receives a signal from the device network.
+	 */
 	public void receiveSignalFromDevice() {
-		System.out.println("2.6 GroundControlStation - Signal Directed");		
+		ScenarioUtil.printMessage("2.6 GroundControlStation - Signal Directed");		
 	}
 
 }

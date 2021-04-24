@@ -1,13 +1,21 @@
 package edu.fiu.earthfi;
 
+import edu.fiu.earthfi.util.ScenarioUtil;
+
+/**
+ * Main class for Project Earth-Fi. It is used to run the skeleton project code. 
+ */
 public class ProjectEarthFi {
 
 	public static void main(String[] args) {
 		new ProjectEarthFi().deviceBasicFlow();	
 	}
 
+	/**
+	 * Performs the basic device workflow (same as the sequence diagram)
+	 */
 	private void deviceBasicFlow() {
-		System.out.println("Starting the basic device flow");
+		ScenarioUtil.printMessage("Starting the basic device flow", 1);
 		
 		LTEAntenna antenna = new LTEAntenna();		
 		antenna.sendSignal();

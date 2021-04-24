@@ -3,6 +3,11 @@ package edu.fiu.earthfi;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.fiu.earthfi.util.ScenarioUtil;
+
+/**
+ * Used to control the device traffic, both in the air and in the waters.
+ */
 public class TrafficController {
 
 	private Object location;
@@ -14,11 +19,14 @@ public class TrafficController {
 		devices.add(new Buoy());
 	}
 	
+	/**
+	 * Organize traffic to prevent accidents and better propagate the signal.
+	 */
 	public void organizeTraffic()  {
-		System.out.println("2. TrafficController - Air Traffic for baloon launch");
+		ScenarioUtil.printMessage("2. TrafficController - Air Traffic for baloon launch");
 		devices.get(0).moveToPosition();
 		
-		System.out.println("2.2 TrafficController - Signal boosted");
+		ScenarioUtil.printMessage("2.2 TrafficController - Signal boosted");
 		devices.get(0).propagateSignal();
 		
 	}
@@ -30,9 +38,12 @@ public class TrafficController {
 	public void preventCollision()  {
 	}
 
+	/**
+	 * Decommissions all existing devices.
+	 */
 	public void decommissionAll() {		
 		for (PropagatingDevice device : devices) {
-			System.out.println("3 TrafficController - Decomm signal, device type: " + device.getType());					
+			ScenarioUtil.printMessage("3. TrafficController - Decomm signal, device type: " + device.getType());					
 			device.decommission();
 		}	
 	}

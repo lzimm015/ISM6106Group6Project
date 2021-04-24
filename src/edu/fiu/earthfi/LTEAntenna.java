@@ -3,6 +3,11 @@ package edu.fiu.earthfi;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.fiu.earthfi.util.ScenarioUtil;
+
+/**
+ * LTE Signal Antenna in the ground, used to provide internet connectivity to the device network. 
+ */
 public class LTEAntenna {
 
 	private String type;
@@ -17,9 +22,11 @@ public class LTEAntenna {
 		devices.add(new Buoy());
 	}
 
-
+	/**
+	 * Send the signal to the devices
+	 */
 	public void sendSignal()  {
-		System.out.println("1. LTEAntenna - Signal Sent");
+		ScenarioUtil.printMessage("1. LTEAntenna - Signal Sent");
 		devices.get(0).receiveSignalFromGround();
 	}
 
