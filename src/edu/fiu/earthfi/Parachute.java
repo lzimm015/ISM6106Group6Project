@@ -15,7 +15,7 @@ public class Parachute {
 	 * Deploy the parachute mechanism.
 	 */
 	public void deployParachute()  {
-		ScenarioUtil.printMessage("3.1 Parachute - Decomm done by parachute");
+		ScenarioUtil.printMessage("3.1.1 Parachute - Decomm done by parachute");
 	}
 
 }

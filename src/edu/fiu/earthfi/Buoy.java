@@ -12,6 +12,9 @@ public class Buoy extends PropagatingDevice {
 	public void detectWaterTurbulence()  {
 	}
 
+	/**
+	 * Decomission the buoy
+	 */
 	public void decommission() {
 		ScenarioUtil.printMessage("3.1 Buoy - Decomm done by sinking");	
 	}
